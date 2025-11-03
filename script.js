@@ -21,8 +21,8 @@ function calcMarks(m){
 
 // ===== Login =====
 function login(){
-  const u = (document.getElementById("user") || {}).value || "";
-  const p = (document.getElementById("pass") || {}).value || "";
+  const u = (document.getElementById("user") || {}).value.trim();
+const p = (document.getElementById("pass") || {}).value.trim();
   if(u === ADMIN_USER && p === ADMIN_PASS){
     // mark logged (optional) and redirect
     localStorage.setItem("srms_logged","1");
