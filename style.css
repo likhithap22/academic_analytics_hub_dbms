@@ -205,3 +205,15 @@ tr:hover td{
   font-weight:600;
   color:var(--accent2);
 }
+
+/* ✅ FIX FOR INPUT NOT WORKING ON RENDER */
+input, .input {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto !important;
+}
+
+.card {
+  position: relative;
+  z-index: 5;
+}
