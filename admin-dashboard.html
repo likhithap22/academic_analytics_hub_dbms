@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SRMS — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">SR</div>
+      <div class="brand-info"><div class="title">Admin Dashboard</div><div class="lead">Manage student results</div></div>
+    </div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="view-result.html">view</a>
+      <a href="result-search.html">Search</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <h2 class="title">Welcome, Admin</h2>
+        <p class="lead">Overview of stored student results.</p>
+      </div>
+      <div>
+        <button class="btn" onclick="location.href='add-result.html'">Add Result</button>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:20px">
+      <div class="card">
+        <div class="big" id="totStudents">0</div>
+        <p class="lead">Total Students</p>
+      </div>
+      <div class="card">
+        <div class="big" id="avgPercent">0%</div>
+        <p class="lead">Average Percentage</p>
+      </div>
+      <div class="card">
+        <div class="big" id="topper">—</div>
+        <p class="lead">Topper</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3 class="title">Quick Actions</h3>
+      <div style="display:flex;gap:12px;margin-top:12px">
+       <button class="btn" onclick="location.href='view-result.html'">View All Results</button>
+        <button class="btn ghost" onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

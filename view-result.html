@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SRMS — All Results</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">SR</div>
+      <div class="brand-info"><div class="title">All Results</div><div class="lead">Student list</div></div>
+    </div>
+    <div class="nav-links">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="add-result.html">Add Result</a>
+      <a href="result-search.html">Search</a>
+      <a href="view-result.html">View All Results</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h2 class="title">All Student Results</h2>
+      <div style="display:flex;gap:12px;align-items:center">
+        <input id="filter" class="input" placeholder="Filter by name or roll" style="width:260px">
+        <button class="btn" onclick="renderTable()">Filter</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;overflow:auto">
+      <table class="table" id="resultsTable">
+        <thead><tr><th>Roll</th><th>Name</th><th>Total</th><th>%</th><th>Grade</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SRMS — Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">SR</div>
+      <div class="brand-info"><div class="title">Search Result</div><div class="lead">By roll number</div></div>
+    </div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="login.html">Admin Login</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title">Find Student Result</h2>
+
+    <div class="card" style="max-width:720px">
+      <div style="display:flex;gap:12px">
+        <input id="qroll" class="input" placeholder="Enter Roll Number">
+        <button class="btn" onclick="searchRoll()">Search</button>
+      </div>
+
+      <div id="searchOut" style="margin-top:14px"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

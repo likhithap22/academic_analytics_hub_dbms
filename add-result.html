@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SRMS — Add Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">SR</div>
+      <div class="brand-info"><div class="title">Add Result</div><div class="lead">Enter student marks</div></div>
+    </div>
+    <div class="nav-links">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="view-result.html">All Results</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title">Add / Edit Student Result</h2>
+    <div class="card" style="max-width:860px;margin-top:16px">
+      <input id="roll" class="input" placeholder="Roll Number">
+      <input id="name" class="input" placeholder="Student Name">
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+        <input id="math" class="input" type="number" placeholder="Mathematics (0-100)">
+        <input id="science" class="input" type="number" placeholder="Science (0-100)">
+        <input id="english" class="input" type="number" placeholder="English (0-100)">
+      </div>
+
+      <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:12px">
+        <button class="btn" onclick="saveResult()">Save Result</button>
+        <button class="btn ghost" onclick="location.href='admin-dashboard.html'">Cancel</button>
+      </div>
+
+      <p id="msg" class="lead" style="color:#9fe7ff;margin-top:12px"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

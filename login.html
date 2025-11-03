@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SRMS — Admin Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">
+      <div class="logo">SR</div>
+      <div class="brand-info"><div class="title">Admin Login</div><div class="lead">Secure area</div></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title">Admin Login</h2>
+    <p class="lead">Enter admin credentials to manage results.</p>
+
+    <div class="card" style="max-width:640px;margin-top:18px">
+      <input id="user" class="input" placeholder="Username">
+      <input id="pass" class="input" type="password" placeholder="Password">
+
+      <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:6px">
+        <button class="btn" onclick="login()">Login</button>
+        <button class="btn ghost" onclick="location.href='home.html'">Back</button>
+      </div>
+
+      <p id="msg" class="lead" style="color:#ff8b8b;margin-top:12px"></p>
+    </div>
+
+    <div style="margin-top:16px" class="card">
+      <div class="lead">Demo: username <span class="badge">admin</span> / password <span class="badge">password123</span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
